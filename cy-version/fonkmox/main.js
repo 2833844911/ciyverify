@@ -221,7 +221,7 @@ async function loop() {
     while (true) {
         console.log("启动检测");
         await main();
-        await sleep(3000); // 等待 3000 毫秒（3秒）
+        await sleep(1000 *  60 * 3);
     }
 }
 
