@@ -1,0 +1,27 @@
+{
+    "redis": {
+        "host": "11.88.88.82",
+        "password": "a6666666",
+        "port": 6379,
+        "db": 0
+    },
+    "mysql": {
+        "host": "11.88.88.82",
+        "user": "cyhh",
+        "password": "dsdasdasfdas",
+        "port": 3306,
+        "db": "vghvhj"
+    },
+    "QQemail": {
+        "user": "13321301@qq.com",
+        "pass": "ofrdspdasdgcadc"
+    },
+    "server": {
+        "port": 3000
+    },
+    "process": {
+        "forks": 3
+    },
+    "serverhost": "http://ciymy.com",
+    "canZuCe": 1
+}

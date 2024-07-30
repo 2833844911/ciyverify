@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4072918 */
+  src: url('{cbbiyhh}/1.0.1/woff/font-dhasjk.woff2?t=1706063297653') format('woff2');
+}
+.bom-path {
+  display: flex; /* 使用弹性盒模型 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+.bom-path::before {
+  font-family: "iconfont";
+  content: "\e704";
+  font-size: 250%; /* 相对于父元素的宽度设置字体大小 */
+  display: flex; /* 使伪元素也成为一个弹性容器 */
+  justify-content: center; /* 水平居中图标内容 */
+  align-items: center; /* 垂直居中图标内容 */
+}
