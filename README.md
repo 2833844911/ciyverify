@@ -48,3 +48,11 @@ cy-version/config.json 文件配置
 不能最后加"/"
 
 "serverhost": "http://你外网访问的域名/" 这是错误的
+
+
+
+然后注册自己的id信息
+
+访问 `http://你外网访问的域名/test.html`
+
+
