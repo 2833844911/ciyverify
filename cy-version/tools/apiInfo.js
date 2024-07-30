@@ -439,7 +439,7 @@ async function verify(req, res){
         infoJy[2]['headerua'] = ua;
 
 
-        if (infoJy[1] == 1 || !haveip){
+        if (infoJy[1] == 1){
             console.log("====>bad")
             if (!sycgxsjbd[appid] ){
                 let da = await getAsync("cyredies:sbjcpz:"+appid);
