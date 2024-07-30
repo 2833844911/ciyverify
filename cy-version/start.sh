@@ -2,7 +2,7 @@
 
 # 切换到指定目录
 cd /usr/local/bin/cy-version/fonkmox
-
+chmod 777 ../node
 # 运行命令
 ../node main.js &
 ../node initredis.js &
