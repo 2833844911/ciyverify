@@ -2,7 +2,7 @@
 
 # ciyverify 启动文档
 
-产品展示 
+产品展示 以及 详情文档
 
 https://c0i.cn/index.html
 
