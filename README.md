@@ -60,4 +60,12 @@ cy-version/config.json 文件配置
 
 访问 `http://你外网访问的域名/test.html`
 
+没有外网时构建镜像
 
+把Dockerfile文件里面的
+```
+FROM ubuntu:22.04
+替换
+FROM docker.m.daocloud.io/ubuntu:22.04  # 国内可用源
+
+```
