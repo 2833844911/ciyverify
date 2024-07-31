@@ -46,7 +46,7 @@ cy-version/config.json 文件配置
 然后创建启动容器 把docker里面的服务端口转发到28083
 `docker run -p 28083:3000 -d ciyverify:latest`
 
-然后开发28083这个端口
+然后开放28083这个端口
 
 "serverhost": "http://你外网访问的域名" 
 
