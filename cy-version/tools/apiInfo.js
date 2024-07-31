@@ -210,7 +210,7 @@ async function putemail(req, res){
         res.send({"code": 1})
     }catch (e) {
         console.log(e)
-        res.send({"code": 0,"msg":"环境校验失败请重新校验!"})
+        res.send({"code": 0,"msg":"环境校验失败请重新校验!" +e})
     }
 
 }
