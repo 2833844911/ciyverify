@@ -361,8 +361,8 @@ async function verify(req, res){
         var yinfo = req.headers.y;
         var sinfo = req.headers.s;
         var a1info = req.headers.a;
-        var ginfo = req.headers.g; // 窗口信息和解密
-        var t2info = req.headers.i; // 轨迹开始滑动的时间
+        var ginfo = req.headers.g;
+        var t2info = req.headers.i;
         var tinfo = req.headers.t;
         var ua = req.headers['user-agent']
         console.log("s:",sinfo)
