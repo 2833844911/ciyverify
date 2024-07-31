@@ -34,7 +34,7 @@ cy-version/config.json 文件配置
     "process": {
         "forks": 3 //进程数
     },
-    "serverhost": "http://ciymy.com", //外网访问host
+    "serverhost": "http://ciymy.com:28083", //外网访问host
     "canZuCe": 1 // 是否允许注册
 }
 
@@ -46,9 +46,9 @@ cy-version/config.json 文件配置
 然后创建启动容器 把docker里面的服务端口转发到28083
 `docker run -p 28083:3000 -d ciyverify:latest`
 
-然后nginx反向代理28083这个端口 serverhost这个是填nginx外网访问的这个host 记得http和https看外网访问是否需要
+然后开发28083这个端口
 
-"serverhost": "http://你外网访问的域名"
+"serverhost": "http://你外网访问的域名" 
 
 不能最后加"/"
 
