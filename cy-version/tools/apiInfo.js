@@ -229,15 +229,15 @@ async function verifymail(req, res){
             res.send({"code": 0,"msg":"验证码错误刷新后重新申请"})
             return
         }
-        let appid2 = "GJHCIOBHKJSMCLZX";
-        let key2 = "fhagkjfjadfklasoijklo";
-        let tk = postData.tk;
-        var h = await getAsync("cyredies:canuse2:"+appid2+':'+key2+':'+tk);
-        if (h+'' !== '1'){
-            res.send({"code": 0,"msg":"环境校验失败请重新校验"})
-            return
-        }
-        await delAsync("cyredies:canuse2:"+appid2+':'+key2+':'+tk)
+        // let appid2 = "GJHCIOBHKJSMCLZX";
+        // let key2 = "fhagkjfjadfklasoijklo";
+        // let tk = postData.tk;
+        // var h = await getAsync("cyredies:canuse2:"+appid2+':'+key2+':'+tk);
+        // if (h+'' !== '1'){
+        //     res.send({"code": 0,"msg":"环境校验失败请重新校验"})
+        //     return
+        // }
+        // await delAsync("cyredies:canuse2:"+appid2+':'+key2+':'+tk)
         let maxdy;
         if (!postData.maxdy){
              maxdy= 1000
