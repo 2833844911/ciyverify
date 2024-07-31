@@ -187,16 +187,16 @@ async function putemail(req, res){
         const postData = req.body;
         var email = postData.email;
 
-        let appid2 = "GJHCIOBHKJSMCLZX";
-        let key2 = "fhagkjfjadfklasoijklo";
-        let tk = postData.tk;
-        var h = await getAsync("cyredies:canuse:"+appid2+':'+key2+':'+tk);
-        if (h+'' !== '1'){
-            res.send({"code": 0,"msg":"环境校验失败请重新校验"})
-            return
-        }
-        await delAsync("cyredies:canuse:"+appid2+':'+key2+':'+tk)
-        await setAsync("cyredies:canuse2:"+appid2+':'+key2+':'+tk, '1', 'EX',6 * 60)
+        // let appid2 = "GJHCIOBHKJSMCLZX";
+        // let key2 = "fhagkjfjadfklasoijklo";
+        // let tk = postData.tk;
+        // var h = await getAsync("cyredies:canuse:"+appid2+':'+key2+':'+tk);
+        // if (h+'' !== '1'){
+        //     res.send({"code": 0,"msg":"环境校验失败请重新校验"})
+        //     return
+        // }
+        // await delAsync("cyredies:canuse:"+appid2+':'+key2+':'+tk)
+        // await setAsync("cyredies:canuse2:"+appid2+':'+key2+':'+tk, '1', 'EX',6 * 60)
 
         let jccode = getCode(5);
         putyx(email, jccode)
